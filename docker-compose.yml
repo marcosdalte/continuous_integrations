@@ -1,5 +1,8 @@
+version: '3'
 services:
-  build: .
+  web:
+    build: .
   # The new volumes key mounts the project directory (current directory) on the host to /app inside the container, allowing you to modify the app on the fly, without having to rebuild the image.
-  volumes:
-   - .:/app
+    volumes:
+      - .:/app/app
+
